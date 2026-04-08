@@ -2,7 +2,7 @@ print("Welcome to the Dungeons!")
 user=input("Type your display name for the game:")
 
 def dungeon():
-    dungeon=input('''Choose a dungeoon to explore:
+    dungeon=input('''Choose a dungeon to explore:
                   (1)Abandoned Entrance 
                   (2)Dark Maze 
                   (3)Frozen Prison 
@@ -23,9 +23,9 @@ def dungeon():
                 print("While you were putting the sword in your backpack, you saw a black entity coming towards you. \nIt seems to be a ghostly figure, and it starts to approach you slowly.")
                 c1=input("Do you choose to confront the entity (1) or try to escape (2)? => ")
                 if c1=='1':
-                    print(f"{user}, you tried to stab the entity with your sword, but it passed through it like a ghost. \nThe entity actually wanted to talk to you but after seeing you trying to attack it, it got angry and prisoned you in a cage. \nYou are now trapped in the dungeon forever, Game over!.")
+                    print(f"{user}, you tried to stab the entity with your sword, but it passed through it like a ghost. \nThe entity actually wanted to talk to you but after seeing you trying to attack it, it got angry and imprisoned you in a cage. \nYou are now trapped in the dungeon forever, Game over!.")
                 elif c1=='2':
-                    print(f"{user}, you quickly turn around and run towards the exit, with the entity chasing you. \nBefore you could reach the exit, the entity catches up to you and saids, 'Why are you running? I just wanted to talk.' \nYou stop in your tracks, and the entity seems to calm down. \nIt tells you that it is a spirit of a former adventurer who got trapped in the dungeon and has been trying to find a way out for years. \nThe entity offers to help you escape if you promise to free it from the dungeon.")
+                    print(f"{user}, you quickly turn around and run towards the exit, with the entity chasing you. \nBefore you could reach the exit, the entity catches up to you and said, 'Why are you running? I just wanted to talk.' \nYou stop in your tracks, and the entity seems to calm down. \nIt tells you that it is a spirit of a former adventurer who got trapped in the dungeon and has been trying to find a way out for years. \nThe entity offers to help you escape if you promise to free it from the dungeon.")
                     d1=input("Do you agree to help the entity (1) or refuse (2)? =>")
                     if d1=='1':
                         print(f"{user}, you agreed to help the entity. \nThe entity tells you the method to free it from the curse, which involves finding a hidden artifact in the dungeon and using it to break the curse. \nYou set off on a quest to find the artifact, facing various challenges and obstacles along the way. \nAfter a long and perilous journey, you finally find the artifact and use it to break the curse, freeing the entity from its prison. \nThe entity thanks you for your help and offers to guide you out of the dungeon safely.")
@@ -33,7 +33,7 @@ def dungeon():
                     elif d1=='2':
                         print(f"{user}, you refused to help the entity, and it becomes angry. \nThe entity says, 'Little brat whom do you think you're refusing to help?' \nThe entity then attacks you, and cut you into pieces within a second. \nYou have died. Game over.") 
             elif b1=='no' or b1=='2':
-                e1=input("You decide not to open the chest and continue ecploring the dungeon. \nAs you walk further, you found a hidden artifact.\nAs you pick it up, you see a black entity coming towards you. \nIt wanted to talk to you but after seeing you have the artifact in your hand, it shout at you, 'Give me that artifact! I need it to break the curse!' \nDo you choose to give the artifact to the entity (1) or keep it for yourself (2)? =>")
+                e1=input("You decide not to open the chest and continue exploring the dungeon. \nAs you walk further, you found a hidden artifact.\nAs you pick it up, you see a black entity coming towards you. \nIt wanted to talk to you but after seeing you have the artifact in your hand, it shout at you, 'Give me that artifact! I need it to break the curse!' \nDo you choose to give the artifact to the entity (1) or keep it for yourself (2)? =>")
                 if e1=='1':
                     print(f"{user}, you decided to give the artifact to the entity. \nThe entity takes the artifact and thanks you for your kindness. \nIt then uses the artifact to break the curse, freeing itself from the dungeon. \nThe entity offers to guide you out of the dungeon safely, and you follow its guidance to successfully escape. \nCongratulations on your successful adventure!")
                 elif e1=='2':
@@ -63,7 +63,7 @@ def dungeon():
         print(f"{user}, you entered the Frozen Prison, where you see many people trapped as slaves. \nThe air is freezing cold, and the walls are covered in ice. \nAs you explore the prison, you see a group of guards patrolling the area, and they seem to be looking for something...")
         a3=input("You hide behind a pillar and observe the guards. \nYou see that they are looking for a prisoner who has escaped from his cell. \nDo you choose to help the guards find the escaped prisoner (1) or try to find the prisoner yourself (2)? =>")
         if a3=='1':
-            print(f"{user}, you decide to help the guards find the escaped prisoner. \nYou join the guards in their search, and after a while, you find the escaped prisoner hiding in a corner. \nThe gaurds thank you for your help and then kill the prisoner with ice bergs. \nThen you get to know that all the prisoners in the dungeon are actually innocent people who were captured and enslaved by the guards. \nYou feel guilty for helping the guards, and you decide to free the remaining prisoners. \nAfter getting rid of the guards, you explore the prison and find some good gears and weapons and the portal of the outside world. \nYou rush to free the prisoners but get caught by the guards.")
+            print(f"{user}, you decide to help the guards find the escaped prisoner. \nYou join the guards in their search, and after a while, you find the escaped prisoner hiding in a corner. \nThe guards thank you for your help and then kill the prisoner with ice bergs. \nThen you get to know that all the prisoners in the dungeon are actually innocent people who were captured and enslaved by the guards. \nYou feel guilty for helping the guards, and you decide to free the remaining prisoners. \nAfter getting rid of the guards, you explore the prison and find some good gears and weapons and the portal of the outside world. \nYou rush to free the prisoners but get caught by the guards.")
             b3=input("The guards say, 'You think you can free our slaves? You are just a weak adventurer! We will make an example out of you!' \nDo you choose to fight the guards (1) or surrender (2)?")
             if b3=='1':
                 print(f"{user}, you decide to fight the guards. \nYou draw your weapon and engage in battle with the guards. \nBut they had the power of ice, and they easily overpower you. \nYou have died. Game over. Sometimes you should not rush :)")    
@@ -92,7 +92,7 @@ You lose control of your body.
 Game Over.''')
         elif a4=='2':
             print('''You ignore the throne and explore the domain.
-While exploring, a wishper says:
+While exploring, a whisper says:
 'I can help you escape.. trust me.'
                   ''')
             b4=input("Do you choose to trust the whisper (1) or stay silent (2)? => ")
@@ -112,12 +112,12 @@ But lose your humanity.Game Over.''')
                 elif c4=='2':
                     print('''As you try to escape, the Shadow King laughs:
 "You think you can escape me? I am the darkness itself!"
-But you hear that wishper again:
+But you hear that whisper again:
 trust me, I can help you escape.''')
                     d4=input("Do you choose to trust the whisper (1) or try to escape on your own (2)? => ")
                     if d4=='1':
                         print(f'''You follow the whisper which said to jump into a portal of light.
-whcih appears out of nowhere, and you escape the Shadow King's domain.
+which appears out of nowhere, and you escape the Shadow King's domain.
 Congratulations, {user}! You have successfully escaped the Shadow King's domain!''')
                     elif d4=='2':
                         print('''You try to escape on your own, but the Shadow King is too powerful.

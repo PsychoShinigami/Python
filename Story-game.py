@@ -76,7 +76,12 @@ def dungeon():
                     print(f"{user}, you decide to take the treasure. \nYou take the treasure. \nThe prisoners are grateful for your help and offer to guide you out of the prison safely. \nCongratulations, {user}! You have successfully escaped the Frozen Prison and helped free innocent people in the process!")
                 elif c3=='2':
                     print(f"{user}, you decide to decline the offer. \nYou thank the prisoners for their gratitude but say that you do not need any reward for helping them. \nBut the prisoners were a bunch of crazy people, and they all jump on you and kill you. \nYou have died. Game over. Sometimes you should just take the free stuff :)")
-                    
+        elif a3=='2':
+            print(f"{user}, you decide to try to find the prisoner yourself. \nYou sneak around the prison and eventually find the escaped prisoner. \nYou tried to help the prisoner escape, but guards caught you on way and killed both of you using ice powers. Game over you died!")
+
+    elif dungeon=='4':
+        print("You have entered the domain of the Shadow King!")
+        
 while True:
     choice=input('''Choose an action:
                   (1)Explore a dungeon

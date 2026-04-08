@@ -61,8 +61,22 @@ def dungeon():
             print("You have died. Game over.")
 
     elif dungeon=='3':
-        print(f"{user}, you entered the ")
-
+        print(f"{user}, you entered the Frozen Prison, where you see many people trapped as slaves. \nThe air is freezing cold, and the walls are covered in ice. \nAs you explore the prison, you see a group of guards patrolling the area, and they seem to be looking for something...")
+        a3=input("You hide behind a pillar and observe the guards. \nYou see that they are looking for a prisoner who has escaped from his cell. \nDo you choose to help the guards find the escaped prisoner (1) or try to find the prisoner yourself (2)? =>")
+        if a3=='1':
+            print(f"{user}, you decide to help the guards find the escaped prisoner. \nYou join the guards in their search, and after a while, you find the escaped prisoner hiding in a corner. \nThe gaurds thank you for your help and then kill the prisoner with ice bergs. \nThen you get to know that all the prisoners in the dungeon are actually innocent people who were captured and enslaved by the guards. \nYou feel guilty for helping the guards, and you decide to free the remaining prisoners. \nAfter getting rid of the guards, you explore the prison and find some good gears and weapons and the portal of the outside world. \nYou rush to free the prisoners but get caught by the guards.")
+            b3=input("The guards say, 'You think you can free our slaves? You are just a weak adventurer! We will make an example out of you!' \nDo you choose to fight the guards (1) or surrender (2)?")
+            if b3=='1':
+                print(f"{user}, you decide to fight the guards. \nYou draw your weapon and engage in battle with the guards. \nBut they had the power of ice, and they easily overpower you. \nYou have died. Game over. Sometimes you should not rush :)")    
+            elif b3=='2':
+                print(f"{user}, you decide to surrender. \nThe guards laugh at you and say, 'You are a fool to surrender. You will be taken to our boss, and he will decide your fate.' \nYou are then taken to the boss of the prison, who is a powerful ice mage. \nYou then asked the boss to 1v1 you with the condition that if you win, he will free the prisoners or if you lose, you will be frozen in ice forever.")
+                print(f"{user}, the boss agrees to your challenge and says, 'Very well, I will give you a chance to prove yourself. But be warned, I am a powerful ice mage, and I will not go easy on you.' \nThe battle begins, and you use all your skills and strategies to fight against the boss. \nAfter a long and intense battle, you manage to defeat the boss as it was a 1v1 match and free the prisoners. \nThe prisoners thank you for your bravery and help, and they offer you a share of the treasure they found.")
+                c3=input("Do you choose to take the treasure (1) or decline the offer (2)? =>")
+                if c3=='1':
+                    print(f"{user}, you decide to take the treasure. \nYou take the treasure. \nThe prisoners are grateful for your help and offer to guide you out of the prison safely. \nCongratulations, {user}! You have successfully escaped the Frozen Prison and helped free innocent people in the process!")
+                elif c3=='2':
+                    print(f"{user}, you decide to decline the offer. \nYou thank the prisoners for their gratitude but say that you do not need any reward for helping them. \nBut the prisoners were a bunch of crazy people, and they all jump on you and kill you. \nYou have died. Game over. Sometimes you should just take the free stuff :)")
+                    
 while True:
     choice=input('''Choose an action:
                   (1)Explore a dungeon
@@ -73,3 +87,4 @@ while True:
     elif choice=='2':
         print("Thanks for playing! Goodbye!")
         break
+

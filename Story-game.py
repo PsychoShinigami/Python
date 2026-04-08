@@ -1,6 +1,5 @@
 print("Welcome to the Dungeons!")
 user=input("Type your display name for the game:")
-inventory=[]
 
 def dungeon():
     dungeon=input('''Choose a dungeoon to explore:
@@ -81,6 +80,82 @@ def dungeon():
 
     elif dungeon=='4':
         print("You have entered the domain of the Shadow King!")
+        print("When you step into this dark realm, you feel a chill run down your spine.\nThe atmosphere is red and rough, and the ground is covered in a layer of darkness.")
+        print("Wherever you see, you notice a void entity everywhere with menacing eyes.")
+        a4=input("You see a throne glowing with dark energy. Choose (1) to sit on it or (2) to ignore it and explore => ")
+        if a4=='1':
+            print('''You sit on the throne...
+Power rushes through your body.
+The Shadow King laughs:
+"Fool... you are now my vessel."
+You lose control of your body.
+Game Over.''')
+        elif a4=='2':
+            print('''You ignore the throne and explore the domain.
+While exploring, a wishper says:
+'I can help you escape.. trust me.'
+                  ''')
+            b4=input("Do you choose to trust the whisper (1) or stay silent (2)? => ")
+            if b4=='1':
+                print('''The voice laughs and traps you in darkness forever.
+Game Over.''')
+            elif b4=='2':
+                print('''You stay silent and continue exploring.
+The shadow king appears:
+"I will give you power beyond imagination…
+or you can try to escape like a coward."''')
+                c4=input("Do you choose to accept the Shadow King's offer (1) or try to escape (2)? => ")
+                if c4=='1':
+                    print('''You accept the Shadow King's offer.
+You become the next Shadow King…
+But lose your humanity.Game Over.''')
+                elif c4=='2':
+                    print('''As you try to escape, the Shadow King laughs:
+"You think you can escape me? I am the darkness itself!"
+But you hear that wishper again:
+trust me, I can help you escape.''')
+                    d4=input("Do you choose to trust the whisper (1) or try to escape on your own (2)? => ")
+                    if d4=='1':
+                        print(f'''You follow the whisper which said to jump into a portal of light.
+whcih appears out of nowhere, and you escape the Shadow King's domain.
+Congratulations, {user}! You have successfully escaped the Shadow King's domain!''')
+                    elif d4=='2':
+                        print('''You try to escape on your own, but the Shadow King is too powerful.
+He catches you and says:
+"You are no match for me. You will live inside my shadow forever."
+Game Over.''')
+    elif dungeon=='5':
+        a5=input('''Are you sure you want to enter the Dragon’s Core?
+This is the hardest dungeon.
+1. Yes
+2. No
+=>''')
+        if a5=='1':
+            b5=input('''You step into the Dragon’s Core...
+The ground shakes.
+A massive dragon appears in front of you.
+Its eyes glow with fire
+1. Stand still
+2. Run
+=>''')
+            if b5=='1':
+                print(f'''The dragon looks at you...
+Then suddenly- 
+It sits down like a puppy and says:
+Yoo I finally got my master back!
+Congratulations, {user}! You have successfully completed the easiest dungeon xD! and befriended the dragon and become its master!''')
+            elif b5=='2':
+                print(f'''You try to run, but the dragon teleports you back to its side.
+It sits down like a puppy and says:
+Yoo I finally got my master back!
+Congratulations, {user}! You have successfully completed the easiest dungeon xD! and befriended the dragon and become its master!''')
+        elif a5=='2':
+            print("You decide not to enter the Dragon’s Core. Maybe you'll explore it another time.")
+    
+
+
+
+
         
 while True:
     choice=input('''Choose an action:

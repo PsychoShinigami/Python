@@ -12,35 +12,56 @@ def dungeon():
                   =>''')
     
     if dungeon=='1':
-        print("You entered the Abandoned Entrance, a place filled with echoes of the past.\nThe air is thick with dust and the scent of decay. \nAs you step inside, you see remnants of old furniture and broken weapons scattered around.\nSuddenly, you hear a faint whisper coming from the shadows...")
+        print(f"{user}, you entered the Abandoned Entrance, a place filled with echoes of the past.\nThe air is thick with dust and the scent of decay. \nAs you step inside, you see remnants of old furniture and broken weapons scattered around.\nSuddenly, you hear a faint whisper coming from the shadows...")
         a1=input("The whisper grows louder, and you realize it's a ghostly voice warning you to leave. \nDo you choose to investigate the source of the whisper(1) or exit the dungeon?(2) =>")
 
         if a1=='2':
-            print("You decide to heed the warning and exit the dungeon safely. \nMaybe you'll explore it another time.")
+            print(f"{user}, you decide to heed the warning and exit the dungeon safely. \nMaybe you'll explore it another time.")
         elif a1=='1':
             b1=input("You follow the whisper deeper into the dungeon, and it leads you to a hidden chamber. \nInside, you find a treasure chest. \nWould you like to open it? (1)Yes (2)No =>")
             if b1=='yes' or b1=='1':
-                print("You open the chest and find an old sword.")
+                print(f"{user}, you open the chest and find an old sword.")
                 print("While you were putting the sword in your backpack, you saw a black entity coming towards you. \nIt seems to be a ghostly figure, and it starts to approach you slowly.")
                 c1=input("Do you choose to confront the entity (1) or try to escape (2)? => ")
                 if c1=='1':
-                    print("You tried to stab the entity with your sword, but it passed through it like a ghost. \nThe entity actually wanted to talk to you but after seeing you trying to attack it, it got angry and prisoned you in a cage. \nYou are now trapped in the dungeon forever, Game over!.")
+                    print(f"{user}, you tried to stab the entity with your sword, but it passed through it like a ghost. \nThe entity actually wanted to talk to you but after seeing you trying to attack it, it got angry and prisoned you in a cage. \nYou are now trapped in the dungeon forever, Game over!.")
                 elif c1=='2':
-                    print("You quickly turn around and run towards the exit, with the entity chasing you. \nBefore you could reach the exit, the entity catches up to you and saids, 'Why are you running? I just wanted to talk.' \nYou stop in your tracks, and the entity seems to calm down. \nIt tells you that it is a spirit of a former adventurer who got trapped in the dungeon and has been trying to find a way out for years. \nThe entity offers to help you escape if you promise to free it from the dungeon.")
+                    print(f"{user}, you quickly turn around and run towards the exit, with the entity chasing you. \nBefore you could reach the exit, the entity catches up to you and saids, 'Why are you running? I just wanted to talk.' \nYou stop in your tracks, and the entity seems to calm down. \nIt tells you that it is a spirit of a former adventurer who got trapped in the dungeon and has been trying to find a way out for years. \nThe entity offers to help you escape if you promise to free it from the dungeon.")
                     d1=input("Do you agree to help the entity (1) or refuse (2)? =>")
                     if d1=='1':
-                        print("You agreed to help the entity. \nThe entity tells you the method to free it from the curse, which involves finding a hidden artifact in the dungeon and using it to break the curse. \nYou set off on a quest to find the artifact, facing various challenges and obstacles along the way. \nAfter a long and perilous journey, you finally find the artifact and use it to break the curse, freeing the entity from its prison. \nThe entity thanks you for your help and offers to guide you out of the dungeon safely.")
-                        print("You follow the entity's guidance and successfully escape the dungeon. \nAs you step outside, you feel a sense of relief and accomplishment. \nYou have not only escaped the dungeon but also helped a trapped spirit find freedom. \nCongratulations on your successful adventure!")
+                        print(f"{user}, you agreed to help the entity. \nThe entity tells you the method to free it from the curse, which involves finding a hidden artifact in the dungeon and using it to break the curse. \nYou set off on a quest to find the artifact, facing various challenges and obstacles along the way. \nAfter a long and perilous journey, you finally find the artifact and use it to break the curse, freeing the entity from its prison. \nThe entity thanks you for your help and offers to guide you out of the dungeon safely.")
+                        print(f"{user}, you follow the entity's guidance and successfully escape the dungeon. \nAs you step outside, you feel a sense of relief and accomplishment. \nYou have not only escaped the dungeon but also helped a trapped spirit find freedom. \nCongratulations on your successful adventure!")
                     elif d1=='2':
-                        print("You refused to help the entity, and it becomes angry. \nThe entity says, 'Little brat whom do you think you're refusing to help?' \nThe entity then attacks you, and cut you into pieces within a second. \nYou have died. Game over.") 
+                        print(f"{user}, you refused to help the entity, and it becomes angry. \nThe entity says, 'Little brat whom do you think you're refusing to help?' \nThe entity then attacks you, and cut you into pieces within a second. \nYou have died. Game over.") 
             elif b1=='no' or b1=='2':
                 e1=input("You decide not to open the chest and continue ecploring the dungeon. \nAs you walk further, you found a hidden artifact.\nAs you pick it up, you see a black entity coming towards you. \nIt wanted to talk to you but after seeing you have the artifact in your hand, it shout at you, 'Give me that artifact! I need it to break the curse!' \nDo you choose to give the artifact to the entity (1) or keep it for yourself (2)? =>")
                 if e1=='1':
-                    print("You decided to give the artifact to the entity. \nThe entity takes the artifact and thanks you for your kindness. \nIt then uses the artifact to break the curse, freeing itself from the dungeon. \nThe entity offers to guide you out of the dungeon safely, and you follow its guidance to successfully escape. \nCongratulations on your successful adventure!")
+                    print(f"{user}, you decided to give the artifact to the entity. \nThe entity takes the artifact and thanks you for your kindness. \nIt then uses the artifact to break the curse, freeing itself from the dungeon. \nThe entity offers to guide you out of the dungeon safely, and you follow its guidance to successfully escape. \nCongratulations on your successful adventure!")
                 elif e1=='2':
-                    print("You decided to keep the artifact for yourself. \nThe entity becomes angry and says, 'You selfish brat! I needed that artifact to break the curse!' \nThe entity then attacks you, and cut you into pieces within a second. \nYou have died. Game over.")
+                    print(f"{user}, you decided to keep the artifact for yourself. \nThe entity becomes angry and says, 'You selfish brat! I needed that artifact to break the curse!' \nThe entity then attacks you, and cut you into pieces within a second. \nYou have died. Game over.")
         else:
             print("Invalid choice. You had to choose either (1) or (2).")
+
+    elif dungeon=='2':
+        print(f"{user}, you entered the Dark Maze, a labyrinth filled with twists and turns. \nThe walls are covered in moss, and the air is damp and musty. \nAs you navigate through the maze, you hear strange noises echoing around you...")
+        print("The voice was of the mystery man who is the boss of the maze. \nHe said, 'Welcome to my maze, adventurer. If you want to escape, you must find the hidden key and unlock the exit door. But be warned, there are many traps and monsters lurking in the maze, and I will be watching your every move.'")
+        print(f"{user}, you start to explore the maze, trying to find the hidden key. \nAs you walk through the maze,you find a chest with golds and a sword in it. \nAs you open the chest and keep the loot, you encounter a group of goblins who are blocking your path. \nThey demand that you give them the loot you just found, or they will attack you.")
+        a2=input("Do you choose to fight the goblins (1) or give them the loot (2)? =>")
+        if a2=='1':
+            print(f"{user}, you decide to fight the goblins. \nYou draw your sword which you had picked up from the chest, and engage in battle with the goblins. \nAfter a fierce fight, you manage to defeat the goblins and continue on your way. \nHowever, you are now injured and have lost some of your health.")
+            print(f"{user}, you continue to explore the maze, and get lost in the twists and turns. \nAfter hours of wandering, you finally reach to the point where it was written one of the path has the key and one of the path gives you huge treasure. \nYou have to choose which path to take. \nDo you choose the key path (1) or the treasure path (2)? =>")
+            b2=input("Do you choose the key path (1) or the treasure path (2)? =>")
+            if b2=='1':
+                print(f"{user}, you decide to take the key path. \nYou follow the path and fall into a trap, which causes you to lose all your health. \nYou have died. Game over. Sometimes you should be little greedy :)")
+            elif b2=='2':
+                print(f"{user}, you decide to take the treasure path. \nYou follow the path and find a room filled with gold and jewels. \nAlso you find the hidden key that you need to escape the maze. \nYou take the treasure and the key, and the hidden man appears and says, 'Ah… clever choice. Most fools chase the key like obedient puppets. But you… you chose greed. And greed is what this maze rewards.' \nCongratulations, {user}! You have successfully escaped the Dark Maze")
+        
+        elif a2=='2':
+            print(f"{user}, you decide to give the goblins the loot. \nThe goblins snatch the loot from you and the sword too. \nThey then laugh at you and tore you apart.")
+            print("You have died. Game over.")
+
+    elif dungeon=='3':
+        print(f"{user}, you entered the ")
 
 while True:
     choice=input('''Choose an action:

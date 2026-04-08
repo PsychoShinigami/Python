@@ -1,18 +1,14 @@
 print("Welcome to the Dungeons!")
 user=input("Type your display name for the game:")
+inventory=[]
 
 def dungeon():
     dungeon=input('''Choose a dungeoon to explore:
                   (1)Abandoned Entrance 
-                  (2)Spider Nest 
-                  (3)Whispering Hall 
-                  (4)Skeleton Crypt
-                  (5)Poison Swamp Chamber
-                  (6)Dark Maze 
-                  (7)Frozen Prison
-                  (8)Cursed Temple 
-                  (9)Shadow King’s Domain
-                  (10)Dragon’s Core
+                  (2)Dark Maze 
+                  (3)Frozen Prison 
+                  (4)Shadow King’s Domain
+                  (5)Dragon’s Core
                   =>''')
     
     if dungeon=='1':
@@ -24,7 +20,7 @@ def dungeon():
         elif a1=='1':
             b1=input("You follow the whisper deeper into the dungeon, and it leads you to a hidden chamber. \nInside, you find a treasure chest. \nWould you like to open it? (1)Yes (2)No =>")
             if b1=='yes' or b1=='1':
-                print("You open the chest and find an old sword.\nCongratulations, you found a valuable item to add to your inventory!")
+                print("You open the chest and find an old sword.")
                 print("While you were putting the sword in your backpack, you saw a black entity coming towards you. \nIt seems to be a ghostly figure, and it starts to approach you slowly.")
                 c1=input("Do you choose to confront the entity (1) or try to escape (2)? => ")
                 if c1=='1':
@@ -49,12 +45,10 @@ def dungeon():
 while True:
     choice=input('''Choose an action:
                   (1)Explore a dungeon
-                  (2)View inventory
-                  (3)Check stats
-                  (4)Exit game
+                  (2)Exit game
                   =>''')
     if choice=='1':
         dungeon()
-    elif choice=='4':
+    elif choice=='2':
         print("Thanks for playing! Goodbye!")
         break
